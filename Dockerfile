@@ -2,7 +2,7 @@
 #
 # VERSION       0.1
 
-FROM bgruening/galaxy-stable:dev
+FROM bgruening/galaxy-stable:15.03
 
 MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
 
@@ -21,7 +21,7 @@ RUN install-repository \
 
 
 RUN install-repository \
-    "--url http://testtoolshed.g2.bx.psu.edu/ -o bgruening --name peptideshaker --panel-section-name PeptideShaker" \
+    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name peptideshaker --panel-section-name PeptideShaker" \
     "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name dbbuilder --panel-section-id getext" \
     "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name decoyfasta --panel-section-name FASTA-Tools" \
     "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name directag_and_tagrecon --panel-section-name Bumbershoot" \
@@ -45,7 +45,6 @@ RUN install-repository \
     "--url http://toolshed.g2.bx.psu.edu/ -o peterjc --name seq_filter_by_id --panel-section-name FASTA-Tools" \
     "--url http://toolshed.g2.bx.psu.edu/ -o peterjc --name seq_rename --panel-section-name FASTA-Tools" \
     "--url http://toolshed.g2.bx.psu.edu/ -o peterjc --name seq_select_by_id --panel-section-name FASTA-Tools" \
-    "--url http://toolshed.g2.bx.psu.edu/ -o peterjc --name get_orfs_or_cdss --panel-section-name FASTA-Tools" \
     "--url http://toolshed.g2.bx.psu.edu/ -o devteam --name fasta_formatter --panel-section-name FASTA-Tools" \
     "--url http://toolshed.g2.bx.psu.edu/ -o devteam --name fasta_nucleotide_changer --panel-section-name FASTA-Tools" \
     "--url http://toolshed.g2.bx.psu.edu/ -o devteam --name fasta_to_tabular --panel-section-name FASTA-Tools" \
@@ -61,17 +60,27 @@ RUN install-repository \
     "--url http://toolshed.g2.bx.psu.edu/ -o jjohnson --name rsem --panel-section-name RSEM"
 
 
-#OpenMS takes too long to compile, I'm working on prebuild binaries
+# Workflows :: does not work currently
 #RUN install-repository \
-#    "--url http://testtoolshed.g2.bx.psu.edu/ -o bgruening --name package_openms_latest" \
-#    "--url http://testtoolshed.g2.bx.psu.edu/ -o bgruening --name openms --panel-section-name OpenMS"
+#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name proteomics_novel_peptide_filter_workflow" \
+#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name proteomics_rnaseq_reduced_db_workflow" \
+#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name proteomics_rnaseq_sap_db_workflow" \
+#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name proteomics_rnaseq_splice_db_workflow"
 
-# Workflows
 RUN install-repository \
-    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name proteomics_novel_peptide_filter_workflow" \
-    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name proteomics_rnaseq_reduced_db_workflow" \
-    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name proteomics_rnaseq_sap_db_workflow" \
-    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name proteomics_rnaseq_splice_db_workflow"
+    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name openms --panel-section-name OpenMS" \
+    "--url http://testtoolshed.g2.bx.psu.edu/ -o iracooke --name spectrast --panel-section-name SpectraST" \
+    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name feature_alignment --panel-section-name SpectraST" \
+    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name spectrast2spectrast_irt --panel-section-name SpectraST" \
+    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name spectrast2tsv --panel-section-name SpectraST"
+
+# Suites
+#RUN install-repository \
+#    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name suite_swath_analysis"
+
+RUN install-repository \
+    "--url http://testtoolshed.g2.bx.psu.edu/ -o iuc --name package_tpp_4_8_0" \
+    "--url http://testtoolshed.g2.bx.psu.edu/ -o iuc --name package_protk_1_4_2"
 
 
 # Mark folders as imported from the host.
