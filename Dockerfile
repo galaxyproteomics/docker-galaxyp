@@ -10,6 +10,8 @@ ENV GALAXY_CONFIG_BRAND Galaxy for Proteomic Research
 
 WORKDIR /galaxy-central
 
+RUN add-tool-shed --url 'http://testtoolshed.g2.bx.psu.edu/' --name 'Test Tool Shed'
+
 # Packages
 RUN install-repository \
     "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name package_directag" \
