@@ -77,12 +77,13 @@ RUN install-repository \
     "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name spectrast2tsv --panel-section-name SpectraST"
 
 # Suites
-#RUN install-repository \
-#    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name suite_swath_analysis"
-
 RUN install-repository \
-    "--url http://testtoolshed.g2.bx.psu.edu/ -o iuc --name package_tpp_4_8_0" \
-    "--url http://testtoolshed.g2.bx.psu.edu/ -o iuc --name package_protk_1_4_2"
+    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name suite_swath_analysis" \
+    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name suite_bumbershoot"
+
+#RUN install-repository \
+#    "--url http://testtoolshed.g2.bx.psu.edu/ -o iuc --name package_tpp_4_8_0" \
+#    "--url http://testtoolshed.g2.bx.psu.edu/ -o iuc --name package_protk_1_4_2"
 
 
 # Mark folders as imported from the host.
