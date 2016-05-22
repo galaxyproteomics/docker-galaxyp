@@ -94,6 +94,13 @@ tools:
   tool_panel_section_label: "FASTA Tools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
 
+- name: fasta_filter_by_length
+  owner: devteam
+  tool_panel_section_label: "FASTA Tools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - c8cd0a03db49
+
 - name: decoyfasta
   owner: galaxyp
   tool_panel_section_label: "FASTA Tools"
@@ -112,6 +119,13 @@ tools:
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   revisions:
     - 626658afe4cb
+
+- name: regex_find_replace
+  owner: jjohnson
+  tool_panel_section_id: textutil
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 9ea374bb0350
 
 
 
@@ -156,10 +170,10 @@ tools:
   revisions:
     - a51980bc0ffe
 
-
-
-
-
-
-
+- name: mgf_formatter
+  owner: galaxyp
+  tool_panel_section_id: convert
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 29e7496f3907
 
