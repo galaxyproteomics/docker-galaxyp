@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/bgruening/docker-galaxyp.svg?branch=master)](https://travis-ci.org/bgruening/docker-galaxyp)
+[![Docker Repository on Quay](https://quay.io/repository/bgruening/galaxy-proteomics/status "Docker Repository on Quay")](https://quay.io/repository/bgruening/galaxy-proteomics)
+
 GalaxyP Docker Image
 ====================
 
