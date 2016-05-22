@@ -7,6 +7,7 @@ FROM bgruening/galaxy-stable:15.03
 MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
 
 ENV GALAXY_CONFIG_BRAND Galaxy for Proteomic Research
+ENV ENABLE_TTS_INSTALL True
 
 WORKDIR /galaxy-central
 
