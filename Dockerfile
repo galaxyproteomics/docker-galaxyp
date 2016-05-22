@@ -54,6 +54,12 @@ RUN install-tools $GALAXY_ROOT/workflows.yaml
 #    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name spectrast2spectrast_irt --panel-section-name SpectraST" \
 #    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name spectrast2tsv --panel-section-name SpectraST"
 
+#RUN install-repository \
+#    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name openms --panel-section-name OpenMS" \
+#    "--url http://testtoolshed.g2.bx.psu.edu/ -o iracooke --name spectrast --panel-section-name SpectraST" \
+#    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name feature_alignment --panel-section-name SpectraST" \
+#    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name spectrast2spectrast_irt --panel-section-name SpectraST" \
+#    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name spectrast2tsv --panel-section-name SpectraST"
 
 # Container Style
 ADD GalaxyDocker.png $GALAXY_CONFIG_DIR/web/welcome_image.png
