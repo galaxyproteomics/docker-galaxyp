@@ -74,11 +74,6 @@ tools:
   tool_panel_section_label: "FASTA Tools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
 
-- name: fasta_nucleotide_changer
-  owner: devteam
-  tool_panel_section_label: "FASTA Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-
 - name: fasta_to_tabular
   owner: devteam
   tool_panel_section_label: "FASTA Tools"
