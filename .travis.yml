@@ -1,0 +1,34 @@
+sudo: required
+
+language: python
+python: 2.7
+
+services:
+  - docker
+
+env:
+  - TOX_ENV=py27
+
+git:
+  submodules: false
+
+before_install:
+  - export GALAXY_TRAVIS_USER=galaxy
+  - export GALAXY_UID=1450
+  - export GALAXY_GID=1450
+  - export GALAXY_HOME=/home/galaxy
+  - export GALAXY_USER=admin@galaxy.org
+  - export GALAXY_USER_EMAIL=admin@galaxy.org
+  - export GALAXY_USER_PASSWD=admin
+  - export BIOBLEND_GALAXY_API_KEY=admin
+  - export BIOBLEND_GALAXY_URL=http://localhost:8080
+
+  - sudo apt-get update -qq
+  - sudo apt-get install docker-engine --no-install-recommends -y -o Dpkg::Options::="--force-confmiss" -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confnew"
+
+  - docker --version
+  - docker info
+
+script:
+  - docker build -t galaxy-docker/test .
+
