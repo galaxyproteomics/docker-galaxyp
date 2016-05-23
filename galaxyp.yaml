@@ -172,3 +172,9 @@ tools:
   revisions:
     - 29e7496f3907
 
+- name: morpheus
+  owner: galaxyp
+  tool_panel_section_label: "Post Translational Modifications"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 553f0336e43e
