@@ -25,7 +25,7 @@
 #                              label, with multiple words joined with
 #                              underscores (e.g., 'BED tools' -> 'bed_tools').
 #
-# Tou can also specify the following optional keys to further define the
+# You can also specify the following optional keys to further define the
 # installation properties:
 #  * tool_shed_url: the URL of the Tool Shed from where the tool should be
 #                   installed. (default: https://toolshed.g2.bx.psu.edu)
