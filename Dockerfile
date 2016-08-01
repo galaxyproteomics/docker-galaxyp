@@ -13,7 +13,7 @@ ENV ENABLE_TTS_INSTALL True
 ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL=True \
     GALAXY_CONFIG_CONDA_AUTO_INIT=True
 
-# Install deepTools
+# Install tools
 ADD galaxyp.yaml $GALAXY_ROOT/tools.yaml
 RUN install-tools $GALAXY_ROOT/tools.yaml
 

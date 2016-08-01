@@ -219,27 +219,27 @@ tools:
 
 - name: ltq_iquant_cli
   owner: galaxyp
-  tool_panel_section_label: utils
+  tool_panel_section_id: utils
   tool_shed_url: http://toolshed.g2.bx.psu.edu/
 
 - name: mgf_formatter
   owner: galaxyp
-  tool_panel_section_label: utils
+  tool_panel_section_id: utils
   tool_shed_url: http://toolshed.g2.bx.psu.edu/
 
 - name: msconvert
   owner: galaxyp
-  tool_panel_section_label: utils
+  tool_panel_section_id: utils
   tool_shed_url: http://toolshed.g2.bx.psu.edu/
 
 - name: ms_data_converter
   owner: galaxyp
-  tool_panel_section_label: utils
+  tool_panel_section_id: utils
   tool_shed_url: http://toolshed.g2.bx.psu.edu/
 
 - name: ms_wiff_loader
   owner: galaxyp
-  tool_panel_section_label: utils
+  tool_panel_section_id: utils
   tool_shed_url: http://toolshed.g2.bx.psu.edu/
 
 - name: myrimatch
@@ -249,27 +249,27 @@ tools:
 
 - name: peptide_to_gff
   owner: galaxyp
-  tool_panel_section_label: utils
+  tool_panel_section_id: utils
   tool_shed_url: http://toolshed.g2.bx.psu.edu/
 
 - name: pepxml_to_xls
   owner: galaxyp
-  tool_panel_section_label: utils
+  tool_panel_section_id: utils
   tool_shed_url: http://toolshed.g2.bx.psu.edu/
 
 - name: proteinpilot
   owner: galaxyp
-  tool_panel_section_label: utils
+  tool_panel_section_id: utils
   tool_shed_url: http://toolshed.g2.bx.psu.edu/
 
 - name: protxml_to_xls
   owner: galaxyp
-  tool_panel_section_label: utils
+  tool_panel_section_id: utils
   tool_shed_url: http://toolshed.g2.bx.psu.edu/
 
 - name: psm_eval
   owner: galaxyp
-  tool_panel_section_label: utils
+  tool_panel_section_id: utils
   tool_shed_url: http://toolshed.g2.bx.psu.edu/
 
 
