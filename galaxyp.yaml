@@ -277,7 +277,7 @@ tools:
 - name: openms
   owner: galaxyp
   tool_panel_section_label: OpenMS
-  tool_shed_url: http://testtoolshed.g2.bx.psu.edu/
+  tool_shed_url: http://toolshed.g2.bx.psu.edu/
 
 - name: spectrast
   owner: iracooke
