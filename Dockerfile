@@ -13,7 +13,7 @@ ENV ENABLE_TTS_INSTALL True
 ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL=True \
     GALAXY_CONFIG_CONDA_AUTO_INIT=True
 
-# Install deepTools
+# Install tools
 ADD galaxyp.yaml $GALAXY_ROOT/tools.yaml
 RUN install-tools $GALAXY_ROOT/tools.yaml
 
@@ -21,45 +21,6 @@ RUN install-tools $GALAXY_ROOT/tools.yaml
 ADD galaxyp_wf.yaml $GALAXY_ROOT/workflows.yaml
 RUN install-tools $GALAXY_ROOT/workflows.yaml
 
-# Packages
-#RUN install-repository \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name package_directag" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name package_myrimatch" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name package_mgf_formatter" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name package_ltq_iquant_cli" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name package_idpqonvert" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name package_tagrecon"
-
-
-#RUN install-repository \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name directag_and_tagrecon --panel-section-name Bumbershoot" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name idpqonvert --panel-section-name Bumbershoot" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name ltq_iquant_cli --panel-section-name utils" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name mgf_formatter --panel-section-name utils" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name msconvert --panel-section-name utils" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name ms_data_converter --panel-section-name utils" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name ms_wiff_loader --panel-section-name utils" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name myrimatch --panel-section-name Bumbershoot" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name peptide_to_gff --panel-section-name utils" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name pepxml_to_xls --panel-section-name utils" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name proteinpilot --panel-section-name utils" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name protxml_to_xls --panel-section-name utils" \
-#    "--url http://toolshed.g2.bx.psu.edu/ -o galaxyp --name psm_eval --panel-section-name utils"
-
-
-#RUN install-repository \
-#    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name openms --panel-section-name OpenMS" \
-#    "--url http://testtoolshed.g2.bx.psu.edu/ -o iracooke --name spectrast --panel-section-name SpectraST" \
-#    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name feature_alignment --panel-section-name SpectraST" \
-#    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name spectrast2spectrast_irt --panel-section-name SpectraST" \
-#    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name spectrast2tsv --panel-section-name SpectraST"
-
-#RUN install-repository \
-#    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name openms --panel-section-name OpenMS" \
-#    "--url http://testtoolshed.g2.bx.psu.edu/ -o iracooke --name spectrast --panel-section-name SpectraST" \
-#    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name feature_alignment --panel-section-name SpectraST" \
-#    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name spectrast2spectrast_irt --panel-section-name SpectraST" \
-#    "--url http://testtoolshed.g2.bx.psu.edu/ -o galaxyp --name spectrast2tsv --panel-section-name SpectraST"
 
 # Container Style
 ADD GalaxyDocker.png $GALAXY_CONFIG_DIR/web/welcome_image.png
