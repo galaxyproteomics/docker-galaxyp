@@ -2,16 +2,11 @@
 #
 # VERSION       0.1
 
-FROM quay.io/bgruening/galaxy:16.04
+FROM quay.io/bgruening/galaxy:17.01
 
 MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
 
 ENV GALAXY_CONFIG_BRAND Galaxy for Proteomic Research
-ENV ENABLE_TTS_INSTALL True
-
-# Enable Conda dependency resolution
-ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL=True \
-    GALAXY_CONFIG_CONDA_AUTO_INIT=True
 
 # Install tools
 ADD galaxyp.yaml $GALAXY_ROOT/tools.yaml
