@@ -1,3 +1,7 @@
+# the urls for either test1 or test2 are repeated twice or three times
+# this would let setup_data_libraries.py to repeatedly upload same file to data library, Training data
+# is it with some special purpose?
+
 libraries:
     - name: test1
       files:
