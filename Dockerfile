@@ -1,8 +1,6 @@
 # Galaxy - GalaxyP
-#
-# VERSION       0.1
 
-FROM quay.io/bgruening/galaxy:17.01
+FROM bgruening/galaxy-stable:17.05
 
 MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
 
