@@ -38,11 +38,11 @@
 
 api_key: admin
 galaxy_instance: http://localhost:8080
+install_resolver_dependencies: true
+install_tool_dependencies: false
 tools:
 - name: asms_tutorial_2016
   owner: galaxyp
   tool_panel_section_label: "ASMS 2016"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-
 
 
