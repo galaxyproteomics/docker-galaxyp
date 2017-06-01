@@ -11,8 +11,8 @@ ADD galaxyp.yaml $GALAXY_ROOT/tools.yaml
 ADD galaxyp_wf.yaml $GALAXY_ROOT/workflows.yaml
 
 RUN install-tools $GALAXY_ROOT/workflows.yaml && \
-    install-tools $GALAXY_ROOT/tools.yaml
-
+    install-tools $GALAXY_ROOT/tools.yaml && \
+    /tool_deps/_conda/bin/conda clean --tarballs
 # Data libraries
 ADD library_data.yaml $GALAXY_ROOT/library_data.yaml
 
