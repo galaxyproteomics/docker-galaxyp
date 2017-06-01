@@ -211,10 +211,6 @@ tools:
   owner: galaxyp
   tool_panel_section_id: utils
 
-- name: openms
-  owner: galaxyp
-  tool_panel_section_label: OpenMS
-
 - name: spectrast
   owner: iracooke
   tool_panel_section_label: SpectraST
