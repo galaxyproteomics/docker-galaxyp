@@ -20,7 +20,7 @@ before_install:
   - sleep 300
 
 install:
-  - make install
+  - travis_wait 75 make install
 
 script:
   - make test_api
