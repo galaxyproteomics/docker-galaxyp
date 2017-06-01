@@ -49,14 +49,6 @@ tools:
   owner: devteam
   tool_panel_section_id: "textutil"
 
-- name: regex_find_replace
-  owner: jjohnson
-  tool_panel_section_id: "textutil"
-
-- name: bedtools
-  owner: iuc
-  tool_panel_section_label: "BED Tools"
-
 - name: translate_bed_sequences
   owner: jjohnson
   tool_panel_section_label: "BED Tools"
