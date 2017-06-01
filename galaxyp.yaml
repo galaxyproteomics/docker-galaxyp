@@ -141,24 +141,6 @@ tools:
   owner: galaxyp
   tool_panel_section_label: "Post Translational Modifications"
 
-- name: package_directag
-  owner: galaxyp
-
-- name: package_myrimatch
-  owner: galaxyp
-
-- name: package_mgf_formatter
-  owner: galaxyp
-
-- name: package_ltq_iquant_cli
-  owner: galaxyp
-
-- name: package_idpqonvert
-  owner: galaxyp
-
-- name: package_tagrecon
-  owner: galaxyp
-
 - name: directag_and_tagrecon
   owner: galaxyp
   tool_panel_section_label: Bumbershoot
