@@ -41,54 +41,6 @@ galaxy_instance: http://localhost:8080
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
-- name: fasta_compute_length
-  owner: devteam
-  tool_panel_section_label: "FASTA Tools"
-
-- name: fasta_merge_files_and_filter_unique_sequences
-  owner: galaxyp
-  tool_panel_section_label: "FASTA Tools"
-
-- name: seq_filter_by_id
-  owner: peterjc
-  tool_panel_section_label: "FASTA Tools"
-
-- name: seq_rename
-  owner: peterjc
-  tool_panel_section_label: "FASTA Tools"
-
-- name: seq_select_by_id
-  owner: peterjc
-  tool_panel_section_label: "FASTA Tools"
-
-- name: fasta_formatter
-  owner: devteam
-  tool_panel_section_label: "FASTA Tools"
-
-- name: fasta_nucleotide_changer
-  owner: devteam
-  tool_panel_section_label: "FASTA Tools"
-
-- name: fasta_to_tabular
-  owner: devteam
-  tool_panel_section_label: "FASTA Tools"
-
-- name: find_subsequences
-  owner: bgruening
-  tool_panel_section_label: "FASTA Tools"
-
-- name: tabular_to_fasta
-  owner: devteam
-  tool_panel_section_label: "FASTA Tools"
-
-- name: fasta_filter_by_length
-  owner: devteam
-  tool_panel_section_label: "FASTA Tools"
-
-- name: decoyfasta
-  owner: galaxyp
-  tool_panel_section_label: "FASTA Tools"
-
 - name: text_processing
   owner: bgruening
   tool_panel_section_id: "textutil"
@@ -192,20 +144,6 @@ tools:
 - name: psm_eval
   owner: galaxyp
   tool_panel_section_id: utils
-
-- name: feature_alignment
-  owner: galaxyp
-  tool_panel_section_label: SpectraST
-
-- name: spectrast2spectrast_irt
-  owner: galaxyp
-  tool_panel_section_label: SpectraST
-  tool_shed_url: http://testtoolshed.g2.bx.psu.edu/
-
-- name: spectrast2tsv
-  owner: galaxyp
-  tool_panel_section_label: SpectraST
-  tool_shed_url: http://testtoolshed.g2.bx.psu.edu/
 
 - name: percolator
   owner: galaxyp
