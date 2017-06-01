@@ -211,10 +211,6 @@ tools:
   owner: galaxyp
   tool_panel_section_id: utils
 
-- name: spectrast
-  owner: iracooke
-  tool_panel_section_label: SpectraST
-
 - name: feature_alignment
   owner: galaxyp
   tool_panel_section_label: SpectraST
