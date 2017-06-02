@@ -1,6 +1,6 @@
 # Galaxy - GalaxyP
 
-FROM bgruening/galaxy-stable:17.05
+FROM bgruening/galaxy-sequence-tools:17.05
 
 MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
 
