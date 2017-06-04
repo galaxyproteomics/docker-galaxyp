@@ -81,10 +81,6 @@ tools:
   owner: galaxyp
   tool_panel_section_id: convert
 
-- name: morpheus
-  owner: galaxyp
-  tool_panel_section_label: "Post Translational Modifications"
-
 - name: directag_and_tagrecon
   owner: galaxyp
   tool_panel_section_label: Bumbershoot
@@ -109,23 +105,11 @@ tools:
   owner: galaxyp
   tool_panel_section_id: utils
 
-- name: ms_wiff_loader
-  owner: galaxyp
-  tool_panel_section_id: utils
-
-- name: myrimatch
-  owner: galaxyp
-  tool_panel_section_label: Bumbershoot
-
 - name: peptide_to_gff
   owner: galaxyp
   tool_panel_section_id: utils
 
 - name: pepxml_to_xls
-  owner: galaxyp
-  tool_panel_section_id: utils
-
-- name: proteinpilot
   owner: galaxyp
   tool_panel_section_id: utils
 
