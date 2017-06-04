@@ -73,10 +73,6 @@ tools:
   owner: galaxyp
   tool_panel_section_label: "BLAST"
 
-- name: blast_plus_remote_blastp
-  owner: galaxyp
-  tool_panel_section_label: "BLAST"
-
 - name: mgf_formatter
   owner: galaxyp
   tool_panel_section_id: convert
