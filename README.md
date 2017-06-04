@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/31227243.svg)](https://zenodo.org/badge/latestdoi/31227243)
 [![Build Status](https://travis-ci.org/galaxyproteomics/docker-galaxyp.svg?branch=master)](https://travis-ci.org/galaxyproteomics/docker-galaxyp)
 [![Docker Repository on Quay](https://quay.io/repository/bgruening/galaxy-proteomics/status "Docker Repository on Quay")](https://quay.io/repository/bgruening/galaxy-proteomics)
 
