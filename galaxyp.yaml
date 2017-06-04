@@ -41,54 +41,6 @@ galaxy_instance: http://localhost:8080
 install_resolver_dependencies: true
 install_tool_dependencies: false
 tools:
-- name: fasta_compute_length
-  owner: devteam
-  tool_panel_section_label: "FASTA Tools"
-
-- name: fasta_merge_files_and_filter_unique_sequences
-  owner: galaxyp
-  tool_panel_section_label: "FASTA Tools"
-
-- name: seq_filter_by_id
-  owner: peterjc
-  tool_panel_section_label: "FASTA Tools"
-
-- name: seq_rename
-  owner: peterjc
-  tool_panel_section_label: "FASTA Tools"
-
-- name: seq_select_by_id
-  owner: peterjc
-  tool_panel_section_label: "FASTA Tools"
-
-- name: fasta_formatter
-  owner: devteam
-  tool_panel_section_label: "FASTA Tools"
-
-- name: fasta_nucleotide_changer
-  owner: devteam
-  tool_panel_section_label: "FASTA Tools"
-
-- name: fasta_to_tabular
-  owner: devteam
-  tool_panel_section_label: "FASTA Tools"
-
-- name: find_subsequences
-  owner: bgruening
-  tool_panel_section_label: "FASTA Tools"
-
-- name: tabular_to_fasta
-  owner: devteam
-  tool_panel_section_label: "FASTA Tools"
-
-- name: fasta_filter_by_length
-  owner: devteam
-  tool_panel_section_label: "FASTA Tools"
-
-- name: decoyfasta
-  owner: galaxyp
-  tool_panel_section_label: "FASTA Tools"
-
 - name: text_processing
   owner: bgruening
   tool_panel_section_id: "textutil"
@@ -96,14 +48,6 @@ tools:
 - name: column_maker
   owner: devteam
   tool_panel_section_id: "textutil"
-
-- name: regex_find_replace
-  owner: jjohnson
-  tool_panel_section_id: "textutil"
-
-- name: bedtools
-  owner: iuc
-  tool_panel_section_label: "BED Tools"
 
 - name: translate_bed_sequences
   owner: jjohnson
@@ -129,35 +73,9 @@ tools:
   owner: galaxyp
   tool_panel_section_label: "BLAST"
 
-- name: blast_plus_remote_blastp
-  owner: galaxyp
-  tool_panel_section_label: "BLAST"
-
 - name: mgf_formatter
   owner: galaxyp
   tool_panel_section_id: convert
-
-- name: morpheus
-  owner: galaxyp
-  tool_panel_section_label: "Post Translational Modifications"
-
-- name: package_directag
-  owner: galaxyp
-
-- name: package_myrimatch
-  owner: galaxyp
-
-- name: package_mgf_formatter
-  owner: galaxyp
-
-- name: package_ltq_iquant_cli
-  owner: galaxyp
-
-- name: package_idpqonvert
-  owner: galaxyp
-
-- name: package_tagrecon
-  owner: galaxyp
 
 - name: directag_and_tagrecon
   owner: galaxyp
@@ -183,23 +101,11 @@ tools:
   owner: galaxyp
   tool_panel_section_id: utils
 
-- name: ms_wiff_loader
-  owner: galaxyp
-  tool_panel_section_id: utils
-
-- name: myrimatch
-  owner: galaxyp
-  tool_panel_section_label: Bumbershoot
-
 - name: peptide_to_gff
   owner: galaxyp
   tool_panel_section_id: utils
 
 - name: pepxml_to_xls
-  owner: galaxyp
-  tool_panel_section_id: utils
-
-- name: proteinpilot
   owner: galaxyp
   tool_panel_section_id: utils
 
@@ -210,28 +116,6 @@ tools:
 - name: psm_eval
   owner: galaxyp
   tool_panel_section_id: utils
-
-- name: openms
-  owner: galaxyp
-  tool_panel_section_label: OpenMS
-
-- name: spectrast
-  owner: iracooke
-  tool_panel_section_label: SpectraST
-
-- name: feature_alignment
-  owner: galaxyp
-  tool_panel_section_label: SpectraST
-
-- name: spectrast2spectrast_irt
-  owner: galaxyp
-  tool_panel_section_label: SpectraST
-  tool_shed_url: http://testtoolshed.g2.bx.psu.edu/
-
-- name: spectrast2tsv
-  owner: galaxyp
-  tool_panel_section_label: SpectraST
-  tool_shed_url: http://testtoolshed.g2.bx.psu.edu/
 
 - name: percolator
   owner: galaxyp

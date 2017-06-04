@@ -13,22 +13,17 @@ git:
   submodules: false
 
 before_install:
-  - export GALAXY_TRAVIS_USER=galaxy
-  - export GALAXY_UID=1450
-  - export GALAXY_GID=1450
-  - export GALAXY_HOME=/home/galaxy
-  - export GALAXY_USER=admin@galaxy.org
-  - export GALAXY_USER_EMAIL=admin@galaxy.org
-  - export GALAXY_USER_PASSWD=admin
-  - export BIOBLEND_GALAXY_API_KEY=admin
-  - export BIOBLEND_GALAXY_URL=http://localhost:8080
+  - wget https://raw.githubusercontent.com/bgruening/galaxy-flavor-testing/master/Makefile
+  - make docker_install
+  - travis_wait 75 make docker_build
+  - make docker_run
+  - sleep 300
 
-  - sudo apt-get update -qq
-  - sudo apt-get install docker-engine --no-install-recommends -y -o Dpkg::Options::="--force-confmiss" -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confnew"
-
-  - docker --version
-  - docker info
+install:
+  - make install
 
 script:
-  - travis_wait 45 docker build -t galaxy-docker/test .
-
+  - make test_api
+  - make test_ftp
+  - make test_bioblend
+  #- make test_docker_in_docker
