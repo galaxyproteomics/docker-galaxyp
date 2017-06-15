@@ -19,7 +19,8 @@ before_install:
   - make docker_run
   - sleep 300
   - DOCKER_INSTANCE=$(docker ps -q)
-  - docker exec $DOCKER_INSTANCE supervisortctl status
+  - echo $DOCKER_INSTANCE
+  - docker exec $DOCKER_INSTANCE supervisorctl status
 install:
   - make install
 
