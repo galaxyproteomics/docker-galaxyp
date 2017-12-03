@@ -18,7 +18,9 @@ before_install:
   - travis_wait 75 make docker_build
   - make docker_run
   - sleep 300
-
+  - DOCKER_INSTANCE=$(docker ps -q)
+  - echo $DOCKER_INSTANCE
+  - docker exec $DOCKER_INSTANCE supervisorctl status
 install:
   - make install
 
