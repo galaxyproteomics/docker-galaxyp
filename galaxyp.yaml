@@ -121,10 +121,6 @@ tools:
   owner: galaxyp
   tool_panel_section_label: Percolator
 
-- name: search_gui
-  owner: galaxyp
-  tool_panel_section_id: utils
-
 - name: unipept
   owner: galaxyp
   tool_panel_section_id: utils
