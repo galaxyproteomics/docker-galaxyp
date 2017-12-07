@@ -120,3 +120,20 @@ tools:
 - name: percolator
   owner: galaxyp
   tool_panel_section_label: Percolator
+
+- name: search_gui
+  owner: galaxyp
+  tool_panel_section_id: utils
+
+- name: unipept
+  owner: galaxyp
+  tool_panel_section_id: utils
+
+- name: query_tabular
+  owner: iuc
+  tool_panel_section_id: utils
+
+- name: sqlite_to_tabular
+  owner: iuc
+  tool_panel_section_id: utils
+
