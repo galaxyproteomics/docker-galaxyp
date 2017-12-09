@@ -1,0 +1,13 @@
+libraries:
+    - name: "Test data"
+      files:
+        - url: https://zenodo.org/record/1098311/files/2016_Jan_12_QE2_45.mgf
+          file_type: mgf
+        - url: https://zenodo.org/record/1098311/files/2016_Jan_12_QE2_46.mgf
+          file_type: mgf
+        - url: https://zenodo.org/record/1098311/files/2016_Jan_12_QE2_46.mgf
+          file_type: mgf
+        - url: https://zenodo.org/record/1098311/files/FASTA_Bering_Strait_Trimmed_metapeptides_cRAP.fasta
+          file_type: fasta
+        - url: https://zenodo.org/record/1098311/files/Gene_Ontology_Terms.tabular
+          file_type: tabular

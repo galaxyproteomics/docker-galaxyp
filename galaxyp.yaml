@@ -64,6 +64,8 @@ tools:
 - name: peptideshaker
   owner: galaxyp
   tool_panel_section_label: "PeptideShaker"
+  revisions:
+    - a72c48001f7c
 
 - name: dbbuilder
   owner: galaxyp
